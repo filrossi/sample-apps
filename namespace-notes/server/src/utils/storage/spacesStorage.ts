@@ -5,11 +5,11 @@ import { Upload } from "@aws-sdk/lib-storage";
 import { S3, ObjectCannedACL } from "@aws-sdk/client-s3";
 import { FileDetail, StorageService } from "./storage";
 
-const spacesEndpoint = `https://nyc3.digitaloceanspaces.com`;
+const spacesEndpoint = `https://ams3.digitaloceanspaces.com`;
 
 const s3 = new S3({
   endpoint: spacesEndpoint,
-  region: "nyc3",
+  region: "ams3",
   credentials: {
     accessKeyId: process.env.DO_SPACES_ACCESS_KEY_ID || "",
     secretAccessKey: process.env.DO_SPACES_SECRET_ACCESS_KEY || "",

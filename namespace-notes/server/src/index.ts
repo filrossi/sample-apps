@@ -7,7 +7,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import documentRoutes from "./routes/documentRoutes";
 import contextRoutes from "./routes/contextRoutes";
-var memwatch = require("@airbnb/node-memwatch");
+var memwatch = require("node-memwatch-new");
 
 // Define the path for the uploads directory
 const uploadsDir = path.join(__dirname, "..", "uploads");
