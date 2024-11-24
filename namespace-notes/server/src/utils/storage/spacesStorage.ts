@@ -81,7 +81,7 @@ export class SpacesStorage implements StorageService {
   }
 
   constructFileUrl(fileKey: string): string {
-    return `https://${process.env.DO_SPACES_BUCKET_NAME}.nyc3.digitaloceanspaces.com/${fileKey}`;
+    return `https://${process.env.DO_SPACES_BUCKET_NAME}.ams3.digitaloceanspaces.com/${fileKey}`;
   }
 
   async deleteWorkspaceFiles(namespaceId: string): Promise<void> {

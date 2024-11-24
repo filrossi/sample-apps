@@ -27,6 +27,7 @@ export const useWorkspaceChatContext = () => useContext(WorkspaceChatContext);
 const defaultWorkspaces: Workspace[] = [
   { id: 'default', name: 'Richard Feynman Lectures', locked: true, createdAt: 1, fileUrls: [] },
   { id: 'empty', name: 'Empty Workspace', locked: true, createdAt: 2, fileUrls: [] },
+  { id: 'dutch-building-code', name: 'Dutch Building Code', locked: true, createdAt: 3, fileUrls: [] },  
 ];
 
 export const WorkspaceChatProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
