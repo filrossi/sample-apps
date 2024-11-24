@@ -42,13 +42,10 @@ export class SpacesStorage implements StorageService {
       throw error;
     } finally {
       try {
-        if (fs.existsSync(file.path)) {
-          await fs.promises.unlink(file.path);
-        }
+        await fs.promises.unlink(file.path);
       } catch (error) {
         console.error("Failed to delete local file:", error);
       }
-     
     }
   }
 
