@@ -28,7 +28,7 @@ if (!fs.existsSync(uploadsDir)) {
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 4001;
+const PORT = process.env.PORT || 4003;
 
 app.use(cors());
 app.use(bodyParser.json());

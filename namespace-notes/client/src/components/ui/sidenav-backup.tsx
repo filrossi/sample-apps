@@ -42,7 +42,7 @@ const Sidenav: React.FC = () => {
             >
               <FaRocket className={`${isCollapsed ? '' : 'mr-2'}`} />
             </Link>
-            <span className={`${isCollapsed ? 'hidden' : 'inline font-medium'}`}>ARK-ASSIS</span>
+            <span className={`${isCollapsed ? 'hidden' : 'inline font-medium'}`}>Namespace Notes</span>
           </div>
         </div>
 
